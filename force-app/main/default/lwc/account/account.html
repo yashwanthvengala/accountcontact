@@ -1,0 +1,21 @@
+<template>
+    <template if:true={accountdetails}>
+    <lightning-card title="Account Details">
+    <lightning-record-form
+    object-api-name={objectApiName}
+    fields={fields}
+    onsuccess={handleSuccess}>
+      </lightning-record-form>
+</lightning-card>
+
+</template>
+
+<template if:true={contactdetails}>
+<lightning-card title="Contact Details">
+
+<c-contact record-id={id} ></c-contact>
+
+</lightning-card>
+</template>
+
+</template>
