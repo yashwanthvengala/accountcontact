@@ -24,6 +24,7 @@ export default class Account extends LightningElement {
 
         this.accountdetails=false;
         this.contactdetails=true;
+        console.log('contact detial::' +this.contactdetails);
     }
 
 }
